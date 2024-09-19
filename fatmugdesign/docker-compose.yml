@@ -1,0 +1,26 @@
+
+services:
+  # Django web application
+  web:
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      - DB_NAME=fatmugdesign
+      - DB_USER=postgres
+      - DB_PASSWORD=790923
+      - DB_HOST=db
+      - DB_PORT=5432
+
+  # PostgreSQL database
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: fatmugdesign
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 790923

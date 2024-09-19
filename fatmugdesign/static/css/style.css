@@ -1,0 +1,50 @@
+
+.navbar a{
+         color:white;}
+.navbar {
+    color: white;
+    font-weight:bold;
+    background-color: red;
+}
+
+.navbar .nav-link {
+    color: white !important;
+
+}
+.navbar .nav-link:hover {
+    color: black !important;
+
+}
+
+.navbar .d-flex {
+    margin-left: auto;
+}
+
+
+.navbar .form-control {
+    border: 1px solid white;
+    color: black;
+}
+
+.navbar .btn-outline-success {
+    border-color: white;
+    color: white;
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: white;
+    color: red;
+}
+.search-form {
+    margin-left: auto;
+    display: flex;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.modal-body p {
+    margin: 0;
+}
+/* Ensure that your CSS file is properly linked in base.html */

@@ -1,0 +1,41 @@
+
+
+
+/* Custom class for red background */
+* {
+    background-color:red !important;
+}
+
+/* Ensure text color is white */
+.navbar {
+    color: white;
+    font-weight:bold;
+    background-color:red;
+}
+
+/* Style for navbar links */
+.navbar .nav-link {
+    color: white !important;
+
+}
+
+/* Search Form Alignment */
+.navbar .d-flex {
+    margin-left: auto; /* Pushes the search bar to the right */
+}
+
+/* Optional: Adjust the search input and button */
+.navbar .form-control {
+    border: 1px solid white; /* White border */
+    color: black; /* Black text color inside input for contrast */
+}
+
+.navbar .btn-outline-success {
+    border-color: white; /* White border for button */
+    color: white; /* White text color for button */
+}
+
+.navbar .btn-outline-success:hover {
+    background-color: white; /* White background on hover */
+    color: red; /* Red text color on hover */
+}
